@@ -1,0 +1,69 @@
+﻿
+.hz-whatsapp-fake, .hz-whatsapp-fake-default {
+    width: 400px;
+    height: 730px;
+    border: 1px solid #808080;
+    background-image:url("../img/whatsapp.jpg") ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hz-whatsapp-fake-conversation {
+
+}
+.hz-whatsapp-fake-post{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.hz-whatsapp-fake-content{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding:5px 10px;
+    margin:1px 5px;
+}
+[data-user-me=true] .hz-whatsapp-fake-content{
+    align-self: flex-end;
+    background-color: #DBF7C5;
+    margin-left: 20px;
+    text-align: left;
+    padding-right: 20px;
+}
+[data-user-me=false] .hz-whatsapp-fake-content{
+    align-self: flex-start;
+    margin-right: 20px;
+    background-color: #fff;
+}
+
+.hz-whatsapp-fake-user{
+    padding-bottom: 8px;
+    display: block;
+}
+
+[data-user-me=true] .hz-whatsapp-fake-user{
+    display: none;
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.content-time{
+    color:#5c5c5c;
+    font-size: 10px;
+    padding-left: 10px;
+    align-self: flex-end;
+
+}
+[data-user-me=false] .content-tick{
+    display: none;
+}
+.content-tick_read i{
+    color:#1c94c4;
+}
+
+.red{
+    color:red;
+}
+
+.blue{
+    color:blue;
+}
