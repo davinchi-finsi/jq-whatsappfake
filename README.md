@@ -9,18 +9,23 @@ Se puede utilizar para mostar una conversación con propósitos pedagógicos o c
 
 Seleccionamos un elemento y la añadimos la clase **hz-whatsapp-fake**.
 
+```html
     <div class="hz-whatsapp-fake"></div>
+```
 
 Lanzamos el recurso:
 
+```js
     $(".hz-whatsapp-fake").whatsappfake({
         data_json: "data/conversation.json"
     });
+```
 
 Como parámetro principal le pasamos la ruta de un json en el que estará la conversación que se va a mostrar.
 
 El json tiene este formato:
 
+```json
     {
       "conversations": [
         {
@@ -108,19 +113,22 @@ El json tiene este formato:
         }
       ]
     }
+```
 
 Por un lado añadimos la conversación y por otro los datos de los usuarios:
 
+```json
     {
         "conversations": [{
             "conversation": {}
             }],
         "users": []
     }
+```
 
 El recurso permite que existe más de una conversación en un mismo json.
 
-**user_me**. 
+```user_me```. 
 Cuando se está en una conversación de whatsapp, el usuario lo visualiza desde su smartphone
 y su conversación aparece alineada a la derecha, con un fondo diferente y no aparece su nombre
 en los mensajes. Este usuario será user_me.
